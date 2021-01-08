@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="js/script.js"></script>
+    </head>
+    <header>truyum<img src="images/truyum.jpg">
+                <a href="menu-item-list-admin.html" class="a2">Menu</a>        
+    </header>
+    <body>
+        <form class="editmenu">
+                <p id="pedit">Edit Menu Item</p>
+                    <label><b>Name</b></label><br>
+                    <input type="text" name="title" size="100" id="namevalid" min="1" max="65" required></input><br>
+               <table>
+                   <tr>
+                    <td id="mtd">price(Rs.)</td>
+                    <td id="mtd">Active</td>
+                    <td id="mtd">Date of Launch</td>
+                    <td id="mtd">category</td>
+                    </tr>
+                     <tr>  
+                    <td><input type="number" name="price" class="pricesizechange" value="97" id="pricevalid" required></input></td> 
+                    <td> <input type="radio" name="inStock" class="radio1" id="radiovalid" >Yes</input>
+                    <input type="radio" name="inStock" class="radio1">No</input> </td>
+                    <td><input type="text" name="dateOfLaunch" class="dateOflaunch"  value="27/04/2022" required></td>
+                    <td><select name="category" class="category" >
+                            <option value="Starters">Starters</option>
+                            <option value="Main Course">Main Course</option>
+                            <option value="Dessert">Dessert</option>
+                            <option value="Drinks">Drinks</option>
+                        </select></td>
+                    </tr>
+                   <tr>
+                       <td><input type="checkbox" class="checkbox"><b>Free Delivery</b></td>
+                   </tr>
+                </table>
+            <button type="Submit" value="submit" name="submit" onclick="pageRedirect()" class="button">Save</button>
+            </form>
+            <footer>
+                Copyright &copy 2019
+            </footer>
+        
+    </body>      
+</html>
